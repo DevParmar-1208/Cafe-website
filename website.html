@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lord Petrick</title>
+  <style>
+    body { 
+background-image: url('bgimage.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+    }
+       
+    .nav-bar a {
+font-size:20px;
+      color: Black;
+      padding: 10px 60px;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .nav-bar a:hover {
+      background-color: antiquewhite;
+      font-size:22px;
+    }
+    .content-section {
+      padding: 20px;
+    }
+    .menu-item {
+      display: inline-block;
+      width: 200px;
+      margin: 140px 40px;
+      background-color: lightyellow;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    .menu-item h3 {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+    .menu-item p {
+      color: red;
+      margin-bottom: 10px;
+    }
+    .menu-item .price {
+      color: chocolate;
+      font-weight: bold;
+    }
+    .reservation-form {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+    .reservation-form input, .reservation-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .reservation-form button {
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .reservation-form button:hover {
+      background-color: #2980b9;
+    }
+    .testimonials {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    .testimonial {
+      margin-bottom: 20px;
+    }
+    .testimonial p {
+      font-style: italic;
+      color: #777;
+    }
+    .testimonial .author {
+      font-weight: bold;
+      color: #333;
+    }
+    .location {
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+    }
+#logo{ 
+height:20px;
+width:20px;
+ text-align: center; 
+}
+/* Add a black background color to the top navigation bar */
+.topnav {
+margin-top:10px
+  overflow: hidden;
+  background-color: olive;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {width:100%;
+font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: maroon;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px; 
+}
+.restaurant-name h1,pre {
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;  /* Olive background for the container */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.search-box {
+    padding: 8px 12px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;  /* White background for the search box */
+    color: #333;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+    text-indent: 10px;
+}
+
+.search-btn {
+    padding: 8px 8px;
+    margin-left: 5px;
+    background-color: white; 
+    color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: bisque; 
+
+}
+.fxd{ position: fixed;
+width:100%;
+}
+.nav-bar { width:100%;
+
+
+border: 2px solid tomato;
+      display: flex;
+      justify-content: center;
+      background-color: white;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="fxd">
+ <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Restaurant Logo" />
+        </div>
+        <div class="restaurant-name">
+            <h1><pre>Lord  Petrick  Coffee  &  Burger</pre></h1>
+        </div>
+        <div class="search-container">
+            <input type="text" class="search-box" placeholder="Search...">
+            <button class="search-btn">🔍</button>
+        </div>
+    </header> <div class="nav-bar">
+  <a href="menu.html">Menu</a>
+  <a href="reservation.html">Reservation</a>
+  <a href="#location">Location</a>
+  <a href="#testimonials">Testimonials</a>
+</div> </div>
+
+<! menu images section>
+<div id="menu" class="content-section">
+  <h2>Our Menu</h2>
+  <div class="menu-item">
+    <img src="pizza.jpg" alt="Dish 1">
+    <h3>Pizza</h3>
+    <p>Crispy crust, melty cheese, savory toppings.</p>
+    <p class="price">Starting from just 59!</p>
+  </div>
+  <div class="menu-item">
+    <img src="burger.jpg" alt="Dish 2">
+    <h3>Burger</h3>
+    <p>juicy patty, soft bun, fresh veggies.</p>
+    <p class="price">Starting from just 39!</p>
+  </div>
+  <div class="menu-item">
+    <img src="fries.jpg" alt="Dish 3">
+    <h3>Fries</h3>
+    <p> Crispy, golden, perfectly salted.</p>
+    <p class="price">Starting from just 25!</p>
+  </div>
+  <div class="menu-item">
+    <img src="coffee.jpg" alt="Dish 4">
+    <h3>Coffee</h3>
+    <p>Bold, rich, aromatic.</p>
+    <p class="price">Starting from just 79!</p>
+  </div>
+</div> 
+
+
+<!-- Location Section with Google Maps -->
+<div id="location" class="content-section">
+  <h2>Find Us</h2>
+  <div class="location">
+    <h3>Our Location</h3>
+    <p>Lord Petrick Coffee & Burger-Manjalpur</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.123924845694!2d73.1850988090246!3d22.27329504379263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc534c15f2d35%3A0xf98b96dcc090f84!2sLord%20Petrick%20Coffee%20%26%20Burger-Manjalpur!5e0!3m2!1sen!2sin!4v1737739735462!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+<!-- Testimonials Section -->
+<div id="testimonials" class="content-section">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>"The food is always fresh and delicious. I love coming here with my family!"</p>
+      <p class="author">- Amresh Kumar</p>
+    </div>
+    <div class="testimonial">
+      <p>"A cozy spot with great coffee and desserts. Highly recommend!"</p>
+      <p class="author">- Rohan Patel</p>
+    </div>
+    <div class="testimonial">
+      <p>"Perfect place for brunch! The staff is friendly and the atmosphere is amazing."</p>
+      <p class="author">-Shalini Gupta</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Lord Petrick Coffee & Burger. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: Black;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: maroon;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            color: #555;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .dish {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #fff;
+            margin: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        .dish:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .price {
+            font-weight: bold;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Menu</h1>
+</header>
+
+<div class="container">
+    <div class="category">
+        <h2>Pizza</h2>
+        <div class="dish">
+            <span>Margherita</span>
+            <span class="price">₹59</span>
+        </div>
+        <div class="dish">
+            <span>Farmhouse</span>
+            <span class="price">₹89</span>
+        </div>
+        <div class="dish">
+            <span>Veg Supreme</span>
+            <span class="price">₹129</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Burger</h2>
+        <div class="dish">
+            <span>Classic Cheeseburger</span>
+            <span class="price">₹39</span>
+        </div>
+        <div class="dish">
+            <span>Mint Mayo Burger</span>
+            <span class="price">₹49</span>
+        </div>
+        <div class="dish">
+            <span>Maharaja Burger</span>
+            <span class="price">₹59</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Coffee</h2>
+        <div class="dish">
+            <span>Classic</span>
+            <span class="price">₹79</span>
+        </div>
+        <div class="dish">
+            <span>Chocolate</span>
+            <span class="price">₹99</span>
+        </div>
+        <div class="dish">
+            <span>Lord Petrick Special</span>
+            <span class="price">₹129</span>
+        </div>
+    </div>
+
+    <div class="category">
+        <h2>Fries</h2>
+        <div class="dish">
+            <span>Classic Fries</span>
+            <span class="price">₹25</span>
+        </div>
+        <div class="dish">
+            <span>Cheese Fries</span>
+            <span class="price">₹39</span>
+        </div>
+        <div class="dish">
+            <span>Spicy Fries</span>
+            <span class="price">₹39</span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
